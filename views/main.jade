@@ -1,0 +1,101 @@
+//- extends home
+//- block content
+//-     h4(class="text-center mb-2 text-uppercase text-black") Laboratorio 15
+//-     .row
+//-         form#formulario
+//-                         .form-group
+//-                             label(for="_id") ID
+//-                             input.form-control(type="text" placeholder="Id del usuario" id="_id")
+//-                         .form-group
+//-                             label(for="first_name") Nombres
+//-                             input(type="text" placeholder="Su nombre" class="form-control" id="first_name")
+//-                         .form-group
+//-                             label(for="last_name") Apellidos
+//-                             input(type="text" placeholder="Su apellidos" class="form-control" id="last_name")
+//-                         .form-group
+//-                             label(for="timezone") Regi&oacute;n
+//-                             input(type="text" placeholder="-5" class="form-control" id="timezone")
+//-                         .form-group
+//-                             label(for="locale") Idioma
+//-                             input(type="text" placeholder="Idioma de preferencia" class="form-control" id="locale")
+//-                         .form-group
+//-                             label(for="profile_pic") Foto
+//-                             input(type="text" placeholder="URL de foto" class="form-control" id="profile_pic")
+//-                         .form-group
+//-                             label(for="baseDatos") Guardar en la base de datos
+//-                             select#baseDatos.select.form-control.input-lg(form='addProperty' name='baseDatos')
+//-                                 option(value='0', selected= true) Si
+//-                                 option(value='1', selected= true) No
+//-                         button(type="submit" class="btn btn-primary") Guardar
+//-         .col-sm-11.m-5.col-md-11.col-lg-6
+//-             table.table.table-ligth.table-bordered
+//-                 thead
+//-                     tr
+//-                         th ID
+//-                         th Nombres
+//-                         th Apellidos
+//-                         th Zona Horaria
+//-                         th Idioma
+//-                         th Foto
+//-                         th 
+//-                         th 
+//-                 tbody
+
+
+extends home
+block content
+    div(class="mt-5 mb-5")
+        h1(class="text-light text-center mt-4 mb-4") CRUD con Socket.io
+        .row
+            .col-md-4
+                .card(class="")
+                    h5.card-header Agregar nuevos usuarios
+                    .card-body
+                        form#formulario
+                            .form-group
+                                label(for="_id") ID
+                                input.form-control(type="text" placeholder="Id del usuario" id="_id")
+                            .form-group
+                                label(for="first_name") Nombres
+                                input(type="text" placeholder="Su nombre" class="form-control" id="first_name")
+                            .form-group
+                                label(for="last_name") Apellidos
+                                input(type="text" placeholder="Su apellidos" class="form-control" id="last_name")
+                            .form-group
+                                label(for="timezone") Regi&oacute;n
+                                input(type="text" placeholder="-5" class="form-control" id="timezone")
+                            .form-group
+                                label(for="locale") Idioma
+                                input(type="text" placeholder="Idioma de preferencia" class="form-control" id="locale")
+                            .form-group
+                                label(for="profile_pic") Foto
+                                input(type="text" placeholder="URL de foto" class="form-control" id="profile_pic")
+                            .form-group
+                                label(for="baseDatos") Guardar en la base de datos
+                                select#baseDatos.select.form-control.input-lg(form='addProperty' name='baseDatos')
+                                    option(value='0', selected= true) Si
+                                    option(value='1', selected= true) No
+                            button(type="submit" class="btn btn-primary btn-block") Guardar
+            .col-md-8
+                .card(class="")
+                    h5.card-header Lista de usuarios agregados
+                    .card-body
+                        table(class="table table-hover")
+                            thead
+                                tr
+                                    th ID
+                                    th Nombres
+                                    th Apellidos
+                                    th Zona Horaria
+                                    th Idioma
+                                    th Foto
+                                    th 
+                                    th 
+                            tbody
+
+
+
+
+
+
+

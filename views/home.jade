@@ -1,0 +1,20 @@
+doctype
+html(lang="es")
+    head
+        title Laboratorio 15
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(name='description' content='Backing Bootstrap Snippets with Jade')
+        link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css')
+        link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css')
+
+    body(class="container-fluid", style="background-image: url(http://getwallpapers.com/wallpaper/full/3/c/1/553754.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;")
+        block content
+        script(src="https://code.jquery.com/jquery-3.4.1.js")
+        script(src="https://cdn.jsdelivr.net/npm/sweetalert2@9")
+        script(src="static/js/app.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js")
+        script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")
